@@ -1,0 +1,9 @@
+.form__heading {
+  width: 330px;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 900;
+  margin: 34px auto 54px 36px;
+  color: #000;
+  font-family: "Inter", Arial, sans-serif;
+}

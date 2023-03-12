@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Mesto Russia</title>
+  </head>
+  <body class="body">
+    <div class="page">
+      <header class="header">
+        <img src="./images/logo.svg" alt="логотип Mesto" class="header__logo">
+      </header>
+      <main class="content">
+        <section class="profile">
+          <div class="profile__container">
+            
+						<img src="./images/Avatar.jpg" alt="Жак-Ив Кусто" class="profile__avatar">
+
+            <div class="profile__info">
+              <div class="profile__info-wrapper">
+                <h1 class="profile__title">Жак-Ив Кусто</h1>
+                <button class="profile__edit-button"></button>
+              </div>
+              <p class="profile__subtitle">Исследователь океана</p>
+            </div>
+          </div>
+
+          <button class="profile__add-button"></button>
+        </section>
+
+        <form action="#" class="form">
+          <h2 class="form__heading">Редактировать профиль</h2>
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            value="Жак-Ив Кусто">
+          <input
+            class="form__input"
+            type="text"
+            name="text"
+            value="Исследователь океана">
+
+          <button class="form__button-save" type="submit">Сохранить</button>
+        </form>
+        <section class="cards">
+          <ul class="cards-grid">
+            <li class="cards-grid__item">
+              <img src="./images/MaskGroup.jpg" alt="Карачаевск" class="cards-grid__image">
+
+              <div class="cards-grid__description">
+                <h2 class="cards-grid__title">Карачаевск</h2>
+							<img src="./images/like.svg" alt="like" class="cards-grid__like">
+						</div>
+            </li>
+
+            <li class="cards-grid__item">
+            <img src="./images/Maskгораэльбрус.jpg" alt="Эльбрус" class="cards-grid__image">
+
+              <div class="cards-grid__description">
+                <h2 class="cards-grid__title">Гора Эльбрус</h2>
+                <img src="./images/like.svg" alt="like" class="cards-grid__like">
+							 </div>
+            </li>
+
+            <li class="cards-grid__item">
+            <img src="./images/Домбай.jpg" alt="Домбай" class="cards-grid__image">
+
+              <div class="cards-grid__description">
+                <h2 class="cards-grid__title">Домбай</h2>
+               <img src="./images/like.svg" alt="like"  class="cards-grid__like">
+							 </div>
+            </li>
+
+            <li class="cards-grid__item">
+             <img src="./images/ГораЭльбрус2.jpg" alt="Гора Эльбрус" class="cards-grid__image">
+
+              <div class="cards-grid__description">
+                <h2 class="cards-grid__title">Гора Эльбрус</h2>
+               <img src="./images/like.svg" alt="like" class="cards-grid__like">
+							 </div>
+            </li>
+
+            <li class="cards-grid__item">
+              <img src="./images/Домбай2.jpg" alt="Домбай" class="cards-grid__image">
+
+              <div class="cards-grid__description">
+                <h2 class="cards-grid__title">Домбай</h2>
+               <img src="./images/like.svg" alt="like" class="cards-grid__like">
+							</div>
+            </li>
+
+            <li class="cards-grid__item">
+              <img src="./images/Карачаевск.jpg" alt="Карачаево-Черкесия" class="cards-grid__image">
+
+              <div class="cards-grid__description">
+                <h2 class="cards-grid__title">Карачаево-Черкесия</h2>
+                <img src="./images/like.svg" alt="like" class="cards-grid__like">
+							 </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">© 2020 Mesto Russia</p>
+      </footer>
+    </div>
+  </body>
+</html>

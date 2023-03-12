@@ -1,0 +1,15 @@
+.page {
+  max-width: 1280px;
+  /* width: calc(100% - 400px); */
+  margin: 0 auto;
+}
+@media screen and (max-width: 1023px) {
+  .page {
+    width: calc(100% - 48px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .page {
+    width: calc(100% - 38px);
+  }
+}

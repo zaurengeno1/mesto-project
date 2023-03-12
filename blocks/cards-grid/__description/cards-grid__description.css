@@ -1,0 +1,8 @@
+.cards-grid__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 80px;
+  background-color: #fff;
+  color: #000;
+}
