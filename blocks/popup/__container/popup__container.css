@@ -1,8 +1,8 @@
 .popup__container {
-	display: flex;
-	flex-direction: column;
-	max-width: 430px;
-	width: calc(282px + (430 - 282) * ((100vw - 320px) / (1280 - 320)));
-	margin: 0;
-	position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 430px;
+  width: calc(282px + (430 - 282) * ((100vw - 320px) / (1280 - 320)));
+  margin: 0;
+  position: relative;
 }

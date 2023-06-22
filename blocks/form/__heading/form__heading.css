@@ -1,25 +1,16 @@
 .form__heading {
-	max-width: 100%;
-	font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1280 - 320)));
-	line-height: 120%;
-	font-weight: 900;
-	margin: 34px 64px 54px 36px;
-	margin-right: calc(22px + (64 - 22) * ((100vw - 320px) / (1280 - 320)));
-	color: #000;
-	font-family: "Inter", Arial, sans-serif;
+  max-width: 100%;
+  font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1280 - 320)));
+  line-height: 120%;
+  font-weight: 900;
+  margin: 34px 64px 54px 36px;
+  margin-right: calc(22px + (64 - 22) * ((100vw - 320px) / (1280 - 320)));
+  color: #000;
+  font-family: "Inter", Arial, sans-serif;
 }
 
-/* @media screen and (max-width: 965px) {
-	.form__heading{
-		margin: 30px auto 70p;
-	}
-
-} */
-
-
 @media screen and (max-width: 767px) {
-	.form__heading {
-		margin: 25px 22px 75px
-	}
-
+  .form__heading {
+    margin: 25px 22px 75px;
+  }
 }

@@ -1,13 +1,13 @@
 .profile__subtitle {
-	max-width: 336px;
+  max-width: 336px;
   font-size: 18px;
   line-height: 122%;
   font-weight: 400;
   margin: 0;
-	color: #fff;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	white-space: nowrap;
+  color: #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 767px) {

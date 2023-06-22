@@ -1,19 +1,19 @@
 .popup {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	 width: 100%;
-	 height: 100%;
-	 position: fixed;
-	 top: 0;
-	 right: 0;
-	 bottom: 0;
-	 left: 0;
-	 margin: 0;
-	 background-color: transparent;
-	 z-index: 10;
-		overflow-x: auto; 
-	 visibility: hidden; 
-		opacity: 0; 
-		transition: visibility .10s, linear .5s, opacity .10s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  background-color: transparent;
+  z-index: 10;
+  overflow-x: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, linear, opacity 0.5s;
 }
