@@ -1,5 +1,5 @@
 const popupMain = document.querySelector(".popup");
-const cardGrid = document.querySelector(".cards__grid");
+const cardGrid = document.querySelector(".cards-grid");
 const formEditReset = document.forms.formEdit;
 
 const profileTitle = document.querySelector(".profile__title");

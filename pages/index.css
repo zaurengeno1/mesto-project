@@ -34,7 +34,7 @@
 @import url(../blocks/form/__button-save/form__button-save.css);
 
 @import url(../blocks/cards/cards.css);
-@import url(../blocks/cards/__grid/cards__grid.css);
+@import url(../blocks/cards-grid/cards__grid.css);
 
 @import url(../blocks/card/card.css);
 @import url(../blocks/card/__description/card__description.css);
