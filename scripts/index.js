@@ -1,5 +1,5 @@
 const popupMain = document.querySelector(".popup");
-const cardGrid = document.querySelector(".cards-grid");
+const cardGrid = document.querySelector(".cards__grid");
 const formEditReset = document.forms.formEdit;
 
 const profileTitle = document.querySelector(".profile__title");
@@ -20,15 +20,15 @@ const formInputEditSubtitle = document.getElementById("form__edit-work-input");
 
 
 
-const popupImageOpen = document.getElementById("popup__image");
+const popupImageOpen = document.getElementById("popup_image");
 const popupImageFull = document.querySelector(".popup__image-full");
 const popupImageTitle = document.querySelector(".popup__image-title");
 
 function openPopup(popupElement) {
-  popupElement.classList.add("popup-open");
+  popupElement.classList.add("popup_open");
 }
 function closePopup(popupElement) {
-  popupElement.classList.remove("popup-open");
+  popupElement.classList.remove("popup_open");
 }
 
 function handleNewCardClick() {
@@ -81,6 +81,7 @@ function createCard(cardData) {
     popupImageFull.alt = cardData.name;
     popupImageTitle.textContent = cardData.name;
     openPopup(popupImageOpen);
+		console.log(popupImageOpen);
   }
 
   cardElementDelete.addEventListener("click", deleteCard);
