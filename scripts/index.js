@@ -2,6 +2,8 @@ const popupMain = document.querySelector(".popup");
 const cardGrid = document.querySelector(".cards-grid");
 const formEditReset = document.forms.formEdit;
 
+console.log(cardGrid)
+
 const profileTitle = document.querySelector(".profile__title");
 const profileSubtitle = document.querySelector(".profile__subtitle");
 const popupButtonClose = document.querySelector(".popup__button-close");
