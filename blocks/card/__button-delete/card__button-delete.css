@@ -5,6 +5,7 @@
   top: 20px;
   right: 20px;
   background-image: url(../../../images/Trash.svg);
+	background-repeat: no-repeat;
   align-self: center;
   border: none;
   background-color: transparent;
