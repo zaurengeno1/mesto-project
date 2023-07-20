@@ -2,8 +2,6 @@ const popupMain = document.querySelector(".popup");
 const cardGrid = document.querySelector(".cards-grid");
 const formEditReset = document.forms.formEdit;
 
-console.log(cardGrid)
-
 const profileTitle = document.querySelector(".profile__title");
 const profileSubtitle = document.querySelector(".profile__subtitle");
 const popupButtonClose = document.querySelector(".popup__button-close");
@@ -16,11 +14,9 @@ const formInputCardTitle = document.querySelector(".form__input-card-title");
 const formInputCardLink = document.querySelector(".form__input-card-link");
 
 const popupEdit = document.getElementById("popup-edit");
-const formEdit = document.getElementById("form__edit");
-const formInputEditTitle = document.getElementById("form__edit-name-input");
-const formInputEditSubtitle = document.getElementById("form__edit-work-input");
-
-
+const formEdit = document.getElementById("form-edit");
+const formInputEditTitle = document.getElementById("edit-name-input");
+const formInputEditSubtitle = document.getElementById("edit-work-input");
 
 const popupImageOpen = document.getElementById("popup_image");
 const popupImageFull = document.querySelector(".popup__image-full");
@@ -28,9 +24,27 @@ const popupImageTitle = document.querySelector(".popup__image-title");
 
 function openPopup(popupElement) {
   popupElement.classList.add("popup_open");
+  document.addEventListener("keydown", keyHandlerEsc);
+  document.addEventListener("click", keyHandlerOverlay);
 }
 function closePopup(popupElement) {
   popupElement.classList.remove("popup_open");
+  document.removeEventListener("keydown", keyHandlerEsc);
+  document.removeEventListener("click", keyHandlerOverlay);
+}
+
+function keyHandlerEsc(evt) {
+  if (evt.key === "Escape") {
+    const popupEsc = document.querySelector(".popup_open");
+    closePopup(popupEsc);
+  }
+}
+
+function keyHandlerOverlay(evt) {
+  const popupOverlay = document.querySelector(".popup_open");
+  if (evt.target === popupOverlay) {
+    closePopup(popupOverlay);
+  }
 }
 
 function handleNewCardClick() {
@@ -83,7 +97,6 @@ function createCard(cardData) {
     popupImageFull.alt = cardData.name;
     popupImageTitle.textContent = cardData.name;
     openPopup(popupImageOpen);
-		console.log(popupImageOpen);
   }
 
   cardElementDelete.addEventListener("click", deleteCard);

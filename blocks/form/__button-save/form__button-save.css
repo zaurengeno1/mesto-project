@@ -3,22 +3,32 @@
   min-height: 50px;
   font-size: 18px;
   line-height: 122%;
-  margin: 0 36px 37px;
+  margin: 18px 36px 37px;
   cursor: pointer;
   background-color: #000;
-  transition: opacity 2s linear;
   color: #fff;
   font-family: "Inter", Arial, sans-serif;
-  transition: opacity 0.1s ease-in-out;
-}
-
-.form__button-save:hover {
-  opacity: 0.6;
+  border-radius: 2px;
+  border: none;
+  transition: opacity 0.3s linear;
 }
 
 @media screen and (max-width: 767px) {
   .form__button-save {
     font-size: 14px;
-    margin: 0 22px 25px;
+    margin: 18px 22px 25px;
   }
+}
+
+.form__button-save:hover {
+  opacity: 0.8;
+}
+
+.form__button-save:disabled {
+  background-color: #fff;
+  color: #000;
+  border-radius: 2px;
+  border: 1px solid #000;
+  opacity: 0.2;
+  cursor: default;
 }

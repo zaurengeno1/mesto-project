@@ -1,8 +1,14 @@
 .form__set {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 36px 0;
   padding: 0;
   border: none;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .form__set {
+    margin: 0 22px 0;
+  }
 }

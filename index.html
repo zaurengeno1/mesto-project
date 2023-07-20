@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./vendor/normalize.css">
-		<link rel="stylesheet" href="./vendor/fonts.css">
     <link rel="stylesheet" href="./pages/index.css">
     <title>Mesto</title>
   </head>
@@ -46,31 +44,37 @@
           type="button"
           id="popup__button-close-edit"
         ></button>
-        <form class="form" name="formEdit" id="form__edit" novalidate>
+        <form class="form form-edit" name="formEdit" id="form-edit" novalidate>
           <h2 class="form__heading">Редактировать профиль</h2>
           <fieldset class="form__set">
             <input
               type="text"
               class="form__input form__input-profile-title"
-              id="form__edit-name-input"
+              id="edit-name-input"
               name="nameEdit"
               placeholder="Жак-Ив Кусто"
               minlength="2"
               maxlength="40"
               required
-            >
-            <span class="form__input-error form__input-error-name"></span>
+            />
+            <span
+              id="error-edit-name-input"
+              class="error-message"
+            ></span>
             <input
               type="text"
               class="form__input form__input-profile-subtitle"
-              id="form__edit-work-input"
+              id="edit-work-input"
               name="workEdit"
               placeholder="Исследователь океана"
               minlength="2"
               maxlength="200"
               required
-            >
-            <span class="form__input-error form__input-error-activity"></span>
+            />
+            <span
+              id="error-edit-work-input"
+              class="error-message"
+            ></span>
           </fieldset>
           <button
             class="form__button-save form__button-save-edit"
@@ -87,7 +91,7 @@
           type="button"
           class="popup__button-close popup__button-close-add"
         ></button>
-        <form class="form" name="formAdd" id="form-card">
+        <form class="form form-card" name="formCard" id="form-card" novalidate>
           <h2 class="form__heading">Новое место</h2>
           <fieldset class="form__set">
             <input
@@ -97,10 +101,14 @@
               name="nameCard"
               placeholder="Название"
               minlength="2"
-              maxlength="40"
+              maxlength="30"
               required
+            />
+            <span
+              id="error-card-name-input"
+              class="error-message"
             >
-            <span class="form__input-error form__input-error-title"></span>
+            </span>
             <input
               type="url"
               class="form__input form__input-card-link"
@@ -110,8 +118,12 @@
               minlength="2"
               maxlength="200"
               required
+            />
+            <span
+              id="error-card-link-input"
+              class="error-message"
             >
-            <span class="form__input-error form__input-error-link"></span>
+            </span>
           </fieldset>
           <button
             class="form__button-save form__button-save-card"
@@ -145,6 +157,7 @@
         </div>
       </li>
     </template>
+    <script src="./scripts/validation.js"></script>
     <script src="./scripts/cards.js"></script>
     <script src="./scripts/index.js"></script>
   </body>
