@@ -1,19 +1,19 @@
 const configValidation = {
-  formSelector: ".form",
-  inputSelector: ".form__input",
-  inputErrorClass: "form__input_invalid",
-  submitButtonSelector: ".form__button-save",
+  formSelector: '.form',
+  inputSelector: '.form__input',
+  inputErrorClass: 'form__input_invalid',
+  submitButtonSelector: '.form__button-save',
 };
 
 function showError(formElement, inputElement, errorMessage, config) {
-  const errorField = formElement.querySelector("#error-" + inputElement.id);
+  const errorField = formElement.querySelector('#error-' + inputElement.id);
   errorField.textContent = errorMessage;
   inputElement.classList.add(config.inputErrorClass);
 }
 
 function hideError(formElement, inputElement, config) {
-  const errorField = formElement.querySelector("#error-" + inputElement.id);
-  errorField.textContent = "";
+  const errorField = formElement.querySelector('#error-' + inputElement.id);
+  errorField.textContent = '';
   inputElement.classList.remove(config.inputErrorClass);
 }
 
@@ -45,7 +45,7 @@ function setEventListener(formElement, config) {
   );
 
   inputList.forEach((inputElement) => {
-    inputElement.addEventListener("input", () => {
+    inputElement.addEventListener('input', () => {
       checkValid(formElement, inputElement, config);
       toggleButton(formElement, buttonSubmitForm);
     });
