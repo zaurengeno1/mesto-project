@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pages/index.css">
+
     <title>Mesto</title>
   </head>
   <body class="body">
     <div class="page">
       <header class="header">
-        <img src="./images/logo.svg" alt="логотип Mesto" class="header__logo">
+        <img
+          src="<%=require('./images/logo.svg')%>"
+          alt="логотип Mesto"
+          class="header__logo">
       </header>
       <main class="content">
         <section class="profile">
           <div class="profile__container">
             <img
-              src="./images/Avatar.jpg"
+              src="<%=require('./images/avatar.jpg')%>"
               alt="Жак-Ив Кусто"
               class="profile__avatar">
             <div class="profile__info">
@@ -44,7 +47,12 @@
           type="button"
           id="popup__button-close-edit"
         ></button>
-        <form class="form form-edit" name="formEdit" id="form-edit" novalidate>
+        <form
+          class="form form-edit-reset"
+          name="formEdit"
+          id="form-edit"
+          novalidate
+        >
           <h2 class="form__heading">Редактировать профиль</h2>
           <fieldset class="form__set">
             <input
@@ -52,33 +60,27 @@
               class="form__input form__input-profile-title"
               id="edit-name-input"
               name="nameEdit"
-              placeholder="Жак-Ив Кусто"
+              placeholder="Имя"
               minlength="2"
               maxlength="40"
               required
             />
-            <span
-              id="error-edit-name-input"
-              class="error-message"
-            ></span>
+            <span id="error-edit-name-input" class="error-message"></span>
             <input
               type="text"
               class="form__input form__input-profile-subtitle"
               id="edit-work-input"
               name="workEdit"
-              placeholder="Исследователь океана"
+              placeholder="О себе"
               minlength="2"
               maxlength="200"
               required
             />
-            <span
-              id="error-edit-work-input"
-              class="error-message"
-            ></span>
+            <span id="error-edit-work-input" class="error-message"></span>
           </fieldset>
           <button
             class="form__button-save form__button-save-edit"
-            type="submit" disabled
+            type="submit"
           >
             Сохранить
           </button>
@@ -104,11 +106,7 @@
               maxlength="30"
               required
             />
-            <span
-              id="error-card-name-input"
-              class="error-message"
-            >
-            </span>
+            <span id="error-card-name-input" class="error-message"> </span>
             <input
               type="url"
               class="form__input form__input-card-link"
@@ -119,15 +117,11 @@
               maxlength="200"
               required
             />
-            <span
-              id="error-card-link-input"
-              class="error-message"
-            >
-            </span>
+            <span id="error-card-link-input" class="error-message"> </span>
           </fieldset>
           <button
             class="form__button-save form__button-save-card"
-            type="submit" disabled
+            type="submit"
           >
             Создать
           </button>
@@ -153,11 +147,8 @@
         <div class="card__description">
           <h2 class="card__title"></h2>
           <button class="card__button-like"></button>
-          <p class="card__work"></p>
         </div>
       </li>
     </template>
-    <script src="./scripts/validate.js"></script>
-    <script src="./scripts/index.js"></script>
   </body>
 </html>
