@@ -12,4 +12,4 @@
 - Адаптивная верстка
 - Webpack
 
-*** ссылка на проект  https://zaurengeno1.github.io/mesto-project/
+ 
